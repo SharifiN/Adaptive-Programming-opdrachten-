@@ -1,33 +1,32 @@
 public class Standaardfactuur implements Factuur {
-    private String factuurid;
-    private String factuurbedrag;
+    private int factuurid;
+    private int factuurbedrag;
 
 
-    public Standaardfactuur() {
-        this.factuurid = "Factuurnummer:" + "NL14859885";
-        this.factuurbedrag ="factuurbedrag:" + "78.951,00 euro";
+    public Standaardfactuur(int factuurid, int factuurbedrag) {
+        this.factuurid=factuurid;
+        this.factuurbedrag=factuurbedrag;
+
     }
 
     @Override
-    public String getFactuurid() {
+    public int getFactuurid() {
         return factuurid;
     }
 
-    public void setFactuurid(String factuurid) {
+    public void setFactuurid(int factuurid) {
         this.factuurid = factuurid;
     }
 
     @Override
-    public String getFactuurbedrag() {
+    public int getFactuurbedrag() {
         return factuurbedrag;
     }
 
     public void setFactuurbedrag(int factuurbedrag) {
-        this.factuurbedrag = "factuurbedrag:"+"78.951,00 euro";;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
+        this.factuurbedrag = factuurbedrag;
+        ;
     }
 }
+
+

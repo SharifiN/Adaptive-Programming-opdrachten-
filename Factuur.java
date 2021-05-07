@@ -1,5 +1,6 @@
 public interface Factuur {
-    public String getFactuurid();
-    public String getFactuurbedrag();
+    public int getFactuurid();
+    public int getFactuurbedrag();
+
 
 }

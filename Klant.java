@@ -1,27 +1,27 @@
-public class Klant extends Standaardfactuur {
+public class Klant {
     private String naam;
     private String adres;
     private String facutuuradres;
-    private int factuurnummer;
-    private String klantid;
+    private int klantid;
 
-    public Klant(String naam) {
-        this.naam = "Naam:" + "johan van der Berg";
-        this.adres = "Adres:"+"Livefd 14" + "1578 HN"+"Den Haag";
-        this.facutuuradres = "Factuuradres:" + "Livefd 14" +"1578 HN"+"Den Haag";
-        this.klantid = "Klant-Id:" + "154896";
+
+
+
+    public Klant(String naam, String adres, String facutuuradres,int klantid){
+        this.naam = naam;
+        this.adres = adres;
+        this.facutuuradres = facutuuradres;
+        this.klantid = klantid;
 
 
     }
-
 
     public String getNaam() {
         return naam;
     }
 
     public void setNaam(String naam) {
-        this.naam = naam;
-    }
+        this.naam = naam;}
 
     public String getAdres() {
         return adres;
@@ -39,21 +39,16 @@ public class Klant extends Standaardfactuur {
         this.facutuuradres = facutuuradres;
     }
 
-    public int getFactuurnummer() {
-        return factuurnummer;
-    }
 
-    public void setFactuurnummer(int factuurnummer) {
-        this.factuurnummer = factuurnummer;
-    }
 
-    public String getKlantid() {
+    public int getKlantid() {
         return klantid;
     }
 
-    public void setKlantid(String klantid) {
+    public void Klantid(int klantid) {
         this.klantid = klantid;
     }
+
 
     @Override
     public String toString() {

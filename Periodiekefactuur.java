@@ -1,13 +1,17 @@
 public class Periodiekefactuur extends Standaardfactuur{
-    private String Periode;
+    private String periode;
 
+    public Periodiekefactuur(int factuurid, int factuurbedrag, String periode) {
+        super(factuurid, factuurbedrag);
+        this.periode = periode;
+    }
 
     public String getPeriode() {
-        return Periode;
+        return periode;
     }
 
     public void setPeriode(String periode) {
-        Periode = periode;
+        periode = periode;
     }
 
 
